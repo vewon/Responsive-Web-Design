@@ -1,0 +1,36 @@
+body {
+    background-color:azure;
+}
+
+form {
+    display: block;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+.description {
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#survey-form {
+    width: 60vw;
+    background-color: gray;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#title {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
