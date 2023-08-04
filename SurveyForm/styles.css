@@ -11,7 +11,7 @@ label {
     margin: 0.5rem 0;
 }
 
-input {
+input, textarea, select {
     margin: 10px 0 0 0;
     width: 100%;
     min-height: 2em;
@@ -21,6 +21,12 @@ input {
     font-style: italic;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+}
+
+.inline {
+    width: unset;
+    vertical-align: middle;
+    margin: 0 auto 0.25rem auto;
 }
 
 #survey-form {
