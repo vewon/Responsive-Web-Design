@@ -3,6 +3,7 @@
   <head>
     <title>Video Game Survey Form</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
   </head>
 
@@ -13,41 +14,59 @@
     <main>
         <form id="survey-form">
             <label for="name" id="name-label">
-                Name 
+                Name
                 <input id="name" type="text" placeholder="Enter your name" required />
             </label>
             <label for="email" id="email-label">
               Email 
               <input id="email" type="email" placeholder="Enter your Email" required />
             </label>
-            <label for="age" id="age-label">
+            <label for="number" id="number-label">
               Age (optional)
-              <input id="age" type="number" placeholder="Enter your age" />
+              <input id="number" type="number" min="13" max="120" placeholder="Enter your age" />
             </label>
-            <label>
+            <label for="dropdown">
               Which platform do you primarily use to discover and download your games?
-              <select> 
+              <select id="dropdown"> 
                 <option value="">(select one option)</option>
                 <option>Online Gaming Stores (Steam, Epic Games Store, etc.)</option>
                 <option>Mobile App Stores (Google Play, Apple Store)</option>
                 <option>Console Digital Stores (PlayStation Store, Xbox Store, etc.)</option>
                 <option>Game Subscription Services (Xbox Game Pass, PlayStation Plus, etc.)</option>
-                <option>Others (Please specify)</option>
+                <option>Others</option>
               </select>
             </label>
             Would you play different genres of games?
             <label>              
-              <input type="radio" class="inline" /> I like trying new things!
+              <input type="radio" class="inline" name="type-of-game" value="1" />
+               Sure! Variety is the spice of life!
             </label>
             <label>
-              <input type="radio" class="inline" /> Nope! Not my style!
+              <input type="radio" class="inline" name="type-of-game" value="2" />
+               No, I stick to what I know and love.
             </label>
             <label>
-              <input type="radio" class="inline" /> It depends on the game.
+              <input type="radio" class="inline" name="type-of-game" value="3" />
+               Maybe, if it looks interesting enough.
+            </label>
+            <label>
+              What types of video games do you typically play? (Select all that apply)
+              <label><input type="checkbox" class="checkbox-input" value="1" />RPG (Role-Playing Game)</label>
+              <label><input type="checkbox" class="checkbox-input" value="2" />MMORPG (Massively Multiplayer Online Role-Playing Game)</label>
+              <label><input type="checkbox" class="checkbox-input" value="3" />FPS (First-Person Shooter)</label>
+              <label><input type="checkbox" class="checkbox-input" value="4" />Action/Adventure</label>
+              <label><input type="checkbox" class="checkbox-input" value="5" />Sports</label>
+              <label><input type="checkbox" class="checkbox-input" value="6" />Puzzle</label>
+              <label><input type="checkbox" class="checkbox-input" value="7" />Strategy</label>
+              <label><input type="checkbox" class="checkbox-input" value="8" />Simulation</label>
+              <label><input type="checkbox" class="checkbox-input" value="9" />Fighting</label>
             </label>
             <label>
               Add additional comments or recommendations:
-              <textarea placeholder="Insert Comment Here"></textarea>
+              <textarea placeholder="My favorite game is..." rows="3" cols="30"></textarea>
+            </label>
+            <label>
+              <input id="submit" type="submit" value="Submit"/>
             </label>
         </form>
     </main>

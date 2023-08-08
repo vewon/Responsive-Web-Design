@@ -1,5 +1,7 @@
 body {
-    background-color:azure;
+    background-color:#FFF3E0;
+    color: #424242;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 form {
@@ -15,6 +17,17 @@ input, textarea, select {
     margin: 10px 0 0 0;
     width: 100%;
     min-height: 2em;
+    color: gray;
+}
+
+input[type="Submit"] {
+    color: black;
+    border: 2px solid #746346;
+    background-color: #d6c5af;
+}
+
+input[type="Submit"]:hover {
+    background-color: #e6e3df;
 }
 
 .description {
@@ -29,12 +42,21 @@ input, textarea, select {
     margin: 0 auto 0.25rem auto;
 }
 
+.checkbox-input {
+    width: unset;
+    vertical-align: middle;
+    margin: 0 0.25rem 0.20rem auto;
+}
+
 #survey-form {
     width: 60vw;
-    background-color: gray;
+    background-color: #D2B48C;
     margin: 0 auto;
     padding: 20px;
     opacity: 80%;
+    border: 2px solid #B2996E;
+    color: black;
+    border-radius: 25px;
 }
 
 #title {
