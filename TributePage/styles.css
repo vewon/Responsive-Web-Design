@@ -1,0 +1,109 @@
+* {
+  font-family: 'Afacad', sans-serif;
+}
+
+html {
+  /* background-color: yellow; */
+  background-image: url("https://images7.alphacoders.com/131/1317814.png");
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#main {
+  background-color: black;
+  color: white;
+  margin: 20px 70px;
+  padding: 20px;
+  border-radius: 20px;
+  opacity: 97%;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 26px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#caption {
+  text-align: center;
+  padding: 0;
+  margin-top: 0;
+}
+
+.divider {
+  background-color: yellow;
+  height: 1px;
+  padding-bottom: 0.2em;
+  margin-bottom: 1em;
+  border-radius: 15px 100px;
+}
+
+#img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+}
+
+#img-caption {
+  text-align: center;
+  padding: 0;
+  margin-top: 0;
+}
+
+#tribute-div {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 70%;
+  display: flex;
+  overflow-wrap: break-word;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#tribute-div p {
+  margin: 0.5em auto;
+}
+
+#quotes {
+  font-style: italic;
+  width: 55%;
+  margin: auto;
+}
+
+fieldset {
+  border-top-style: dotted;
+  border-radius: 10px 50px;
+  margin: 20px;
+}
+
+#skippy {
+  font-size: 28px;
+  color: red;
+}
+
+#quotes-name {
+  color: yellow;
+  font-size: 22px;
+}
+
+#tribute-link {
+  color: yellow;
+  text-decoration-line: none;
+}
+
+#tribute-link:hover {
+  text-decoration-line: underline;
+}
