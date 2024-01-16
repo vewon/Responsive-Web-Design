@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  body {
+    background-color: black;
+    color: white;
+  }
+  
+  nav {
+    min-width: 290px;
+    height: 100%;
+    position: fixed;
+    width: 290px;
+    overflow: scroll;
+    text-align: center;
+  }
+  
+  nav > header {
+    font-family: "Orbitron";
+    font-size: 28px;
+    color: yellow;
+  }
+  
+  nav > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
+  }
+  
+  nav li {
+    border-top: 1px solid white;
+    font-family: "Orbitron";
+  }
+  
+  nav li:hover {
+    background-color: red;
+  }
+  
+  nav li:last-of-type {
+    border-bottom: 1px solid white;
+  }
+  
+  li > a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  #main-doc {
+    border-left: 1px solid white;
+    padding-left: 10px;
+    position: absolute;
+    left: 300px;
+    margin: 0 1em;
+    font-family: "Afacad";
+  }
+  
+  section > header {
+    font-size: 24px;
+    font-family: "Orbitron";
+  }
+
+  .divider {
+    background-image: linear-gradient(to right, rgba(255, 255, 0, 0.7), black 60%);
+    width: 100%;
+    height: 0.5em;
+    border-radius: 10px 50px;
+    margin-top: 0.5em;
+  }
+  
+  p {
+    text-indent: 1em;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .main-link {
+    color: yellow;
+  }
+
+  .main-link:hover {
+    color: red;
+  }
+  
+  .main-link:active {
+    color: pink;
+  }
+  
+  .code-block {
+    border: 1px solid gray;
+    background: rgb(60, 60, 60);
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .code-text {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .two-column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .two-column ul {
+    width: 100%;
+    max-width: 400px;
+    font-family: "Afacad";
+    list-style-type: circle;
+    list-style-position: inside;
+  }
+
+  h1 {
+    font-size: 24px;
+    text-indent: 0.5em;
+    font-weight: bold;
+  }
+
+  fieldset {
+    margin: 0;
+    border-radius: 10px 20px;
+    border-color: gray;
+  }
+
+  legend {
+    font-family: "Orbitron";
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      position: relative;
+      height: 250px;
+      width: 100%;
+    }
+
+    #main-doc {
+      position: relative;
+      left: 0;
+      width: 95%;
+      border-left: 0;
+      padding-left: 0;
+    }
+  }
