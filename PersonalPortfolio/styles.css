@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
 :root {
     --background-color-1: 35, 75, 131;
     --accent-color: #395f9c;
@@ -28,6 +34,7 @@ h1, p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 9;
 }
 
 .row-box {
@@ -49,6 +56,8 @@ h1, p {
 }
 
 #navbar {
+    position: fixed;
+    right: 10px;
     z-index: 9;
 }
 
@@ -193,6 +202,8 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 10px;
+    text-align: center;
 }
 
 .contact-link {
@@ -242,4 +253,90 @@ a {
 
 .italic {
     font-style: italic;
+}
+
+@media (min-width:1090px) and (max-width: 1660px) {
+    .project-div {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1089px) {
+    #navbar a:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    #welcome-section {
+        flex-direction: column;
+    }
+
+    .front-end {
+        font-size: 24px;
+    }
+
+    .front-end-text {
+        font-size: 70px;
+    }
+
+    .project-div {
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width: 599px) {
+    #header, #navbar ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #navbar {
+        position: static;
+    }
+
+    #navbar ul {
+        flex-direction: row;
+    }
+
+    #welcome-section {
+        flex-direction: column;
+    }
+
+    .welcome-div .front-end {
+        font-size: 18px;
+        margin-top: 80px;
+    }
+
+    .front-end-text {
+        font-size: 60px;
+    }
+
+    .project-div {
+        grid-template-columns: auto;
+    }
+
+    .project-div-item img {
+        height: 200px;
+        width: 400px;
+    }
+}
+
+.hover-over {
+    transition: color 1s ease-in-out;
+    color: white;
+}
+
+.hover-over:hover {
+    color: rgba(var(--background-color-1), 1.0);
+    cursor: pointer;
+}
+
+@keyframes hover-color {
+    0% {
+        color: white;
+    }
+
+    100% {
+        color: rgba(var(--background-color-1), 1.0);
+    }
 }
